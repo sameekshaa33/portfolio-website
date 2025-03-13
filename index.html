@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a4b752cd84.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -71,19 +72,108 @@
         </div>
     </div>
 </div>
-   <script>
-    var tablinks=document.getElementsByClassName("tab-links");
-    var tabcontents=document.getElementsByClassName("tab-contents");
+<!-- ----services------- -->
+ <div id="services">
+<div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+        <div>
+            <i class="fa-solid fa-chart-simple"></i>
+            <h2> Predictive Modeling</h2>
+            <p>Build AI models that forecast future trends,helping businesses make data-driven decisions.</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-chart-pie"></i>
+            <h2> Data Visualization</h2>
+            <p>Create interactive dashboards and charts to turn raw data into meaningful insights.</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-comment-nodes"></i>
+            <h2>Machine Learning</h2>
+            <p>Deploy ML models using Flask for real-world applications.</p>
+        </div>
+    </div>
+</div>
+ </div>
+ <!---------portfolio------------>
+ <div id="portfolio">
+<div class="container">
+<h1 class="sub-title">My Work</h1>
+<div class="work-list">
+    <div class="work">
+        <img src="images/work-1.png">
+        <div class="layer">
+            <h3>Customer Churn Prediction</h3>
+            <p>Built a machine learning model to predict customer churn for a telecom company. Used feature engineering, exploratory data analysis, and classification models like Random Forest and XGBoost. Evaluated model performance using precision-recall metrics.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </div>
+    <div class="work">
+        <img src="images/work-2.png">
+        <div class="layer">
+            <h3>Sentiment Analysis on Social Media</h3>
+            <p>Analyzed Twitter/X data to classify sentiments (positive, negative, neutral) using NLP techniques. Implemented word embeddings, TF-IDF, and trained models like LSTM and BERT. Deployed a Flask app with a real-time sentiment dashboard.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </div>
+    <div class="work">
+        <img src="images/work-3.png">
+        <div class="layer">
+            <h3>Fraud Detection in Credit Card Transactions</h3>
+            <p> Developed an anomaly detection system for credit card fraud using unsupervised learning (Isolation Forest, Autoencoders). Applied feature selection and data balancing techniques to improve model accuracy. Visualized results with interactive dashboards.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </div>
+</div>
+<a href="#" class="btn">see more</a>
+</div>
+ </div>
 
-    function opentab(tabname, event){
-        for(let tablink of tablinks){
-            tablink.classList.remove("active-link");
+<!-----------contact-------------------->
+<div id="contact">
+    <div id="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>sameekshaa.33@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9381065909</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download cv</a>
+            </div>
+            <div class="contact-right">
+                  <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email required">
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                  </form>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="copyright">© 2025 Sameeksha. All rights reserved.</p>
+
+        </div>
+    </div>
+</div>
+   <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname, event) {
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");  // Remove active state from all tabs
         }
-        for(let tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");  // Hide all content sections
         }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
+        event.currentTarget.classList.add("active-link");  // Highlight the clicked tab
+        document.getElementById(tabname).classList.add("active-tab");  // Show selected content
     }
     
 
