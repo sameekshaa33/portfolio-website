@@ -4,6 +4,9 @@
   font-family:"Poppins",sans-serif;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior:smooth ;
+}
 body{
   background: #080808;
   color:#fff;
@@ -310,9 +313,17 @@ form .btn2{
   font-size: 16px;
   color: #ababab;
 }
-
+.sidemenu i.fa-square-xmark{
+  display: none; /* Hide close icon on larger screens */
+}
+nav .fa-bars {
+  display: none; /* Hide menu icon by default */
+}
 /*-----small screens------*/
-@media only screen and (max-width:600px){
+nav .fas{
+  display:none;
+}
+@media only screen and (max-width:768px){
   #header{
     background-image: url(images/phone-background.png);
   }
@@ -323,5 +334,78 @@ form .btn2{
   .header-text h1{
     font-size: 30px;
   }
-  
+  nav .fs{
+    display:block;
+    font-size:25px;
+  }
+  nav .fa-bars {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+}
+.sidemenu i.fa-square-xmark {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+  nav ul{
+    background: #ff004f;
+    position:fixed;
+    top:0;
+    right:-200px;
+    width:200px;
+    height:100vh;
+    padding-top:50px;
+  }
+  nav ul li{
+    display: block;
+    margin:25px;
+
+
+  }
+  nav ul .fas{
+    position: absolute;
+    top:25px;
+    left:25px;
+    font-size: 24px;
+    cursor:pointer;
+
+  }
+  .sidemenu i.fa-square-xmark {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.sub-title{
+  font-size:40px;
+}
+.about-col-1,.about-col-2{
+  flex-basis: 100%;
+}
+.about-col-1{
+  margin-bottom: 30px;
+}
+.about-col-2{
+  font-size: 14px;
+}
+.tab-links{
+  font-size: 16px;
+  margin-right: 20px;
+}
+.contact-left,.contact-right{
+  flex-basis: 100%;
+}
+.copyright{
+  font-size: 20px;
+}
+}
+#msg{
+  color:#fff;
+  margin-top: -20px;
+  display:block;
 }
