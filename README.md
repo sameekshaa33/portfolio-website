@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website! 🚀 Here, you can explore my projects, skills, and experience in **Data Science & Machine Learning**.  
 
 ## 🔗 Live Demo  
-Check out my portfolio website: 
+Check out my portfolio website: https://sameekshaportfoliowebsite.netlify.app/
 
 ## 📌 About Me  
 I am a passionate **Data Scientist** from **Hyderabad**, currently pursuing a **Bachelor’s Degree in Computer Science (AIML) at Malla Reddy University (2026)**. I specialize in **Machine Learning, Data Analysis, and Model Deployment**.  
@@ -28,6 +28,6 @@ I am a passionate **Data Scientist** from **Hyderabad**, currently pursuing a **
 
 ## 📞 Contact Me  
 📧 **Email:** sameekshaa.33@gmail.com   
-🔗 **LinkedIn:** [Sameeksha Kottinty](https://www.linkedin.com/in/sameeksha-kotthinty-07b547302)  
+🔗 **LinkedIn:** www.linkedin.com/in/sameeksha33 
 
 🚀 **Feel free to explore my portfolio and reach out for collaborations!**  
